@@ -12,8 +12,8 @@
 
 service: test
 # app and org for use with dashboard.serverless.com
-#app: your-app-name
-#org: your-org-name
+app: test
+org: quantranbb
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -24,7 +24,7 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs16.x
 #  stage: "test"
 
 functions:

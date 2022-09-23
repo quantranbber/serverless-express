@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "lib": ["ES2019"],
     "module": "commonjs",
+    "rootDir": "",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
     "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "outDir": "lib",
     "sourceMap": true,
-    "target": "ES2019",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"]
-    }
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "resolveJsonModule": true
   },
-  "exclude": ["node_modules"]
+  "include": [
+    ""
+  ]
 }

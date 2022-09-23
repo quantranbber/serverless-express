@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import NodeCache from 'node-cache';
 
-const myCache = new NodeCache( { stdTTL: 1000, checkperiod: 100 } );
+const myCache = new NodeCache({ stdTTL: 1000, checkperiod: 100 });
 
 const router = Router();
 
@@ -16,7 +16,7 @@ router.get('/users/:id', async (req, res) => {
 
   user = {
     name: 'quan.tranvan',
-    class: 'dev'
+    class: 'dev',
   };
 
   console.log('cache data not found, ==============> start set data');
